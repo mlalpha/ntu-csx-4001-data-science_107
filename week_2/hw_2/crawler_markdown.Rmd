@@ -1,0 +1,27 @@
+```{r}
+library(rvest)
+library(XML)
+```
+
+```{r}
+htmlData <- read_html("https://movie.yahoo-leisure.hk/movie/showing?url=movie%2Fshowing")
+```
+
+```{r}
+res <- list()
+
+title_xpath = ".title"
+
+titles <- htmlData %>% 
+  html_nodes(".each-movie") %>% 
+  html_nodes(title_xpath) %>%
+  html_text
+```
+```{r}
+
+for( title in titles){
+    print(title)
+}
+```
+
+
