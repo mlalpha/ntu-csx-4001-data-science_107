@@ -13,4 +13,4 @@
 
 - week_5任務
     - 建立一命名為 week_5(or task_5, hw_5)的資料夾。
-    - 完成一份_________-上傳至資料夾中，須繳交兩份檔案[.Rmd, .html)]。
+    - 完成一份TDIDF[https://mlalpha.github.io/ntu-csx-4001-data-science_107/week_5/task_5/jay_chou_lyrics_tdidf.html]-上傳至資料夾中，須繳交兩份檔案[.Rmd, .html)]。
