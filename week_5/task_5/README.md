@@ -12,4 +12,4 @@
 * 不愛我就拉倒.txt
 
 ## TF-IDF
-
+**[Notebook Link](./jay_chou_lyrics_tdidf.ipynb)**
