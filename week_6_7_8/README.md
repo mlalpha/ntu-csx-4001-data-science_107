@@ -10,5 +10,8 @@
 # Dataset
 [IMDB Film Database](https://www.imdb.com/chart/top?ref_=nv_mv_250)
 
+## Scrapy By
+[Scrapy Program](https://github.com/mlalpha/ntu-csx-4001-data-science_107/tree/master/week_6_7_8/query/IMDbIDCrawler) 
+
 # Notebook
-[My implementation of the Visualization](https://github.com/mlalpha/ntu-csx-4001-data-science_107/blob/master/week_6_7_8/Exploration/Exploration.md)
+[My implementation of the Visualization](https://mlalpha.github.io/ntu-csx-4001-data-science_107/week_6_7_8/Exploration.html)
