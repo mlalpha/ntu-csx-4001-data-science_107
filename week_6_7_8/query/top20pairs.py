@@ -51,7 +51,10 @@ for item in rank:
 for item in top20List:
     print(item)
 
-f = open('top20List', 'w')
-for result in top20List:
-    f.write(result)
-f.close()
+# f = open('top20List', 'w')
+# for result in top20List:
+#     f.write(result)
+# f.close()
+
+def top20List():
+    return top20List

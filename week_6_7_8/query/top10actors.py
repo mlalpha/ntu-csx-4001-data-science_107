@@ -7,17 +7,17 @@ with open('collgraph.edgelist') as csvfile:
     lineReader = csv.reader(csvfile, delimiter='\n')
     csv_list = [item[0].split(',') for item in list(lineReader)]
     for row in csv_list:
-        if collaborativeRank.has_key(row[0]):
+        if collaborativeRank.get(row[0], False):
             collaborativeRank[row[0]] = collaborativeRank[row[0]]+int(row[2])
         else:
             collaborativeRank[row[0]] = int(row[2])
 
-        if collaborativeRank.has_key(row[1]):
+        if collaborativeRank.get(row[1], False):
             collaborativeRank[row[1]] = collaborativeRank[row[1]]+int(row[2])
         else:
             collaborativeRank[row[1]] = int(row[2])
 
-rank = collaborativeRank.items()
+rank = list(collaborativeRank.items())
 rank.sort(key=lambda a:int(a[1]),reverse=True)
 
 ranking=[]
@@ -38,8 +38,8 @@ for item in rank:
         top10List.append(item)
 
 
-print top10List
 f = open('top10List', 'w')
 for actor in top10List:
     f.write(actor[0]+","+str(actor[1])+"\n")
+    print(actor[0]+", "+str(actor[1]))
 f.close()

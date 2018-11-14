@@ -4,8 +4,12 @@ from pprint import pprint
 import re
 
 try:
-    with open('IMDb_data/IMDb2006-2015.json') as data_file:
-        data = json.load(data_file)
+    try:
+        with open('IMDb_data/IMDb2006-2015.json') as data_file:
+            data = json.load(data_file)
+    except:
+        with open('query/IMDb_data/IMDb2006-2015.json') as data_file:
+            data = json.load(data_file)
 except:
     print("No such file or directory: 'IMDb_data\\IMDb2006-2015.json'")
     exit()
