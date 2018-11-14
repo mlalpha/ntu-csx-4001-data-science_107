@@ -11,4 +11,4 @@
 [IMDB Film Database](https://www.imdb.com/chart/top?ref_=nv_mv_250)
 
 # Notebook
-[My implementation of the Visualization](https://www.imdb.com/chart/top?ref_=nv_mv_250)
+[My implementation of the Visualization](https://github.com/mlalpha/ntu-csx-4001-data-science_107/blob/master/week_6_7_8/Exploration/Exploration.md)
